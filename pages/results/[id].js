@@ -62,7 +62,7 @@ const Result = ({ query }) => {
             <td>1</td>
             <td>macOS Mojave 10.14.2 + Firefox 64.0 + VoiceOver</td>
             <td>○</td>
-            <td>リンク「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。</td>
+            <td>このデータはダミーです。</td>
             <td>(作業コメント テスト結果ID 0003)</td>
           </tr>
         </tbody>
