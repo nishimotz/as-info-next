@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）" />
           <meta name="keywords" content="ウェブ,アクセシビリティ,基盤,委員会,WAIC,web,accessibility,infrastructure,committee,アクセシビリティ,サポーテッド,AS,情報" />
           <meta name="description" content="アクセシビリティ・サポーテッド（AS）情報に関する解説文書" />
-          <link rel="stylesheet" type="text/css" href="http://waic.jp/cmn/css/docs.css" />
+          <link rel="stylesheet" type="text/css" href="https://waic.jp/cmn/css/docs.css" />
           <style type="text/css" dangerouslySetInnerHTML={{__html: "table{empty-cells: show;}tr.warn{background: #ffd;}tr.ng{background: #fdd;}" }} />
         </Head>
         <body>
