@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../components/Logo'
 import { useRouter } from 'next/router'
 import techs from '../../data/techs.yaml'
+import criteria from '../../data/criteria.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -23,12 +24,19 @@ const Tech = ({ query }) => {
       <h2>{trueId}: {tech.title}</h2>
       <h3>関連する達成基準</h3>
       <ul>
-        <li><a href="../criteria/1.1.1.html">1.1.1非テキストコンテンツに関する達成基準 (等級A)</a></li>
-        <li><a href="../criteria/2.4.4.html">2.4.4文脈におけるリンクの目的に関する達成基準 (等級A)</a></li>
+        {tech.criteria.map(key => (
+        <li key={key}>
+          <a href={'../criteria/' + key + '.html'}>{key} {criteria[key].title} (等級{criteria[key].level})</a>
+        </li>
+        ))}
       </ul>
       <h3>関連するテストケース</h3>
       <ul>
-        <li><a href="../results/0001-01.html">テスト0001-01</a></li>
+        {tech.tests.map(key => (
+        <li key={key}>
+          <a href={'../results/' + key + '.html'}>テスト{key}</a>
+        </li>
+        ))}
       </ul>
     </>
   )
