@@ -34,7 +34,7 @@ const Result = ({ query }) => {
       </ul>
       <h3>関連する達成方法</h3>
       <ul>
-        {test.techs.map(key => (
+        {Object.keys(techs).filter((key) => techs[key].tests.includes(trueId)).map(key => (
         <li key={key}>
           <a href={'../techs/' + key + '.html'}>{key}: {techs[key].title}</a>
         </li>
@@ -47,7 +47,7 @@ const Result = ({ query }) => {
       </ul>
       <h3>対象</h3>
       <ul>
-        {test.techs.map(key => (
+        {Object.keys(techs).filter((key) => techs[key].tests.includes(trueId)).map(key => (
         <li key={key}>{techs[key].target}</li>
         ))}
       </ul>
