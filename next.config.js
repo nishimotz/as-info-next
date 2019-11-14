@@ -49,7 +49,7 @@ module.exports = withCSS(withSass({
       {}
     )
     const results = Object.keys(
-      yaml.safeLoad(fs.readFileSync('./data/results.yaml', 'utf8'))
+      yaml.safeLoad(fs.readFileSync('./data/tests.yaml', 'utf8'))
     ).reduce(
       (pages, key) =>
         Object.assign({}, pages, {
