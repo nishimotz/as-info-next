@@ -47,7 +47,9 @@ const Result = ({ query }) => {
       </ul>
       <h3>対象</h3>
       <ul>
-        <li>a要素内にあるimg要素のalt属性</li>
+        {test.techs.map(key => (
+        <li key={key}>{techs[key].target}</li>
+        ))}
       </ul>
       <h3>テスト結果の概要</h3>
       <ul>
