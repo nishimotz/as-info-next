@@ -24,7 +24,9 @@ const Tech = ({ query }) => {
       <h2>{trueId}: {tech.title}</h2>
       <h3>関連する達成基準</h3>
       <ul>
-        {tech.criteria.map(key => (
+        {Object.keys(criteria).filter(
+          key => criteria[key].techs.includes(trueId)
+        ).map(key => (
         <li key={key}>
           <a href={'../criteria/' + key + '.html'}>{key} {criteria[key].title} (等級{criteria[key].level})</a>
         </li>
