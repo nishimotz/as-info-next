@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../components/Logo'
 import { useRouter } from 'next/router'
 import criteria from '../../data/criteria.yaml'
+import techs from '../../data/techs.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -30,20 +31,15 @@ const Criterion = ({ query }) => {
           </tr>
         </thead>
         <tbody>
-          <tr className="ok">
+          {criterion.techs.map(key => (
+          <tr key={key} className="ok">
             <td>
-              <a href="../techs/H2.html">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</a>
+              <a href={'../techs/' + key + '.html'}>{key}: {techs[key].title}</a>
             </td>
-            <td>a要素内にあるimg要素のalt属性</td>
-            <td>要注意</td>
+            <td>{techs[key].target}</td>
+            <td></td>
           </tr>
-          <tr className="ok">
-            <td>
-              <a href="../techs/H30.html">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a>
-            </td>
-            <td>a要素内に単一のimg要素があるケース</td>
-            <td>達成可能</td>
-          </tr>
+          ))}
         </tbody>
       </table>
     </>
