@@ -14,6 +14,15 @@ const Result = ({ query }) => {
   const trueId = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
   const test = tests[trueId];
   const tech_ids = Object.keys(techs).filter((key) => techs[key].tests.includes(trueId));
+  const criterion_ids = Object.keys(criteria).filter((key) => {
+    let found = false;
+    tech_ids.forEach((tech_id) => {
+      if (criteria[key].techs.includes(tech_id)) {
+        found = true;
+      }
+    })
+    return found;
+  });
   return (
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + trueId})}/>
@@ -27,9 +36,9 @@ const Result = ({ query }) => {
       <h2>テスト{trueId}: {test.title}</h2>
       <h3>関連する達成基準の実装方法一覧</h3>
       <ul>
-        {test.criteria.map(key => (
-        <li key={key}>
-          <a href={'../criteria/' + key + '.html'}>{key}: {criteria[key].title} (等級{criteria[key].level})</a>
+        {criterion_ids.map(criterion_id => (
+        <li key={criterion_id}>
+          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id}: {criteria[criterion_id].title} (等級{criteria[criterion_id].level})</a>
         </li>
         ))}
       </ul>
