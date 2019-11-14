@@ -23,7 +23,7 @@ export default () =>
   <p>解説を作成するにあたっては、問い合わせの多い達成基準から優先的に議論しており、ワーキンググループでの検討が終わり次第、順次公開していく予定である。</p>
   <ul>
     {Object.keys(criteria).map(
-      key => <li>
+      key => <li key={key}>
         <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</a>
       </li>
     )}
