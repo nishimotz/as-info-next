@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../../components/Logo'
 import { useRouter } from 'next/router'
 import tests from '../../data/tests.yaml'
+import criteria from '../../data/criteria.yaml'
+import techs from '../../data/techs.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -23,13 +25,19 @@ const Result = ({ query }) => {
       <h2>テスト{trueId}: {test.title}</h2>
       <h3>関連する達成基準の実装方法一覧</h3>
       <ul>
-        <li><a href="../criteria/1.1.1.html">1.1.1非テキストコンテンツに関する達成基準 (等級A)</a></li>
-        <li><a href="../criteria/2.4.4.html">2.4.4文脈におけるリンクの目的に関する達成基準 (等級A)</a></li>
+        {test.criteria.map(key => (
+        <li key={key}>
+          <a href={'../criteria/' + key + '.html'}>{key}: {criteria[key].title} (等級{criteria[key].level})</a>
+        </li>
+        ))}
       </ul>
       <h3>関連する達成方法</h3>
       <ul>
-        <li><a href="../techs/H2.html">H2: 隣り合った画像とテキストリンクを同じリンクの中に入れる</a></li>
-        <li><a href="../techs/H30.html">H30: a 要素のリンクの目的を説明するリンクテキストを提供する</a></li>
+        {test.techs.map(key => (
+        <li key={key}>
+          <a href={'../techs/' + key + '.html'}>{key}: {techs[key].title}</a>
+        </li>
+        ))}
       </ul>
       <h3>テストファイル</h3>
       <ul>
