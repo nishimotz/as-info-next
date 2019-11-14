@@ -1,0 +1,19 @@
+---
+- id: 0001
+  test: 0001-01
+  user_agent: macOS Mojave 10.14.2 + Firefox 64.0 + VoiceOver
+  judgment: ○
+  procedure: リンク「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。
+  comment: (作業コメント テスト結果ID 0003)
+- id: 0002
+  test: 0001-01
+  user_agent: Windows 10 + NVDA
+  judgment: ○
+  procedure: 手順のテスト
+  comment: コメントのテスト
+- id: 0003
+  test: 0001-02
+  user_agent: Windows 10 + NVDA
+  judgment: ○
+  procedure: 手順のテスト2
+  comment: コメントのテスト2

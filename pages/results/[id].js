@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
+import results from '../../data/results.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -59,6 +60,7 @@ const Result = ({ query }) => {
         <thead>
           <tr>
             <th scope="col">行番号</th>
+            <th scope="col">テストID</th>
             <th scope="col">ユーザエージェント</th>
             <th scope="col">検証結果</th>
             <th scope="col">操作手順</th>
@@ -66,13 +68,18 @@ const Result = ({ query }) => {
           </tr>
         </thead>
         <tbody>
-          <tr className="ok">
-            <td>1</td>
-            <td>macOS Mojave 10.14.2 + Firefox 64.0 + VoiceOver</td>
-            <td>○</td>
-            <td>リンク「ウェブアクセシビリティ基盤委員会公開サイト」にVoiceOverキー+右矢印キーで移動した。</td>
-            <td>(作業コメント テスト結果ID 0003)</td>
+          {results.filter(
+            result => result.test === trueId
+          ).map((result, index) => (
+          <tr key={result.id} className="ok">
+            <td>{index + 1}</td>
+            <td>{result.id}</td>
+            <td>{result.user_agent}</td>
+            <td>{result.judgment}</td>
+            <td>{result.procedure}</td>
+            <td>{result.comment}</td>
           </tr>
+          ))}
         </tbody>
       </table>
     </>
