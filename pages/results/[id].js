@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../../components/Logo'
 import { useRouter } from 'next/router'
-import results from '../../data/results.yaml'
+import tests from '../../data/tests.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -9,7 +9,7 @@ const Result = ({ query }) => {
   const router = useRouter()
   const { id } = router.query
   const trueId = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
-  const result = results[trueId];
+  const test = tests[trueId];
   return (
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + trueId})}/>
@@ -20,7 +20,7 @@ const Result = ({ query }) => {
         <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
         <li><a href="../">戻る</a></li>
       </ul>
-      <h2>テスト{trueId}: {result.title}</h2>
+      <h2>テスト{trueId}: {test.title}</h2>
       <h3>関連する達成基準の実装方法一覧</h3>
       <ul>
         <li><a href="../criteria/1.1.1.html">1.1.1非テキストコンテンツに関する達成基準 (等級A)</a></li>
@@ -33,8 +33,8 @@ const Result = ({ query }) => {
       </ul>
       <h3>テストファイル</h3>
       <ul>
-        <li><a href={result.document}>{trueId}のテストの目的、テスト手順、期待される結果、テスト実施時の注意点など</a></li>
-        <li><a href={result.code}>{trueId}のテストコード</a></li>
+        <li><a href={test.document}>{trueId}のテストの目的、テスト手順、期待される結果、テスト実施時の注意点など</a></li>
+        <li><a href={test.code}>{trueId}のテストコード</a></li>
       </ul>
       <h3>対象</h3>
       <ul>
