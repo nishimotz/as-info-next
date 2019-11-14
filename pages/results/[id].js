@@ -13,6 +13,7 @@ const Result = ({ query }) => {
   const { id } = router.query
   const trueId = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
   const test = tests[trueId];
+  const tech_ids = Object.keys(techs).filter((key) => techs[key].tests.includes(trueId));
   return (
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + trueId})}/>
@@ -34,9 +35,9 @@ const Result = ({ query }) => {
       </ul>
       <h3>関連する達成方法</h3>
       <ul>
-        {Object.keys(techs).filter((key) => techs[key].tests.includes(trueId)).map(key => (
-        <li key={key}>
-          <a href={'../techs/' + key + '.html'}>{key}: {techs[key].title}</a>
+        {tech_ids.map(tech_id => (
+        <li key={tech_id}>
+          <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {techs[tech_id].title}</a>
         </li>
         ))}
       </ul>
@@ -47,8 +48,8 @@ const Result = ({ query }) => {
       </ul>
       <h3>対象</h3>
       <ul>
-        {Object.keys(techs).filter((key) => techs[key].tests.includes(trueId)).map(key => (
-        <li key={key}>{techs[key].target}</li>
+        {tech_ids.map(tech_id => (
+        <li key={tech_id}>{techs[tech_id].target}</li>
         ))}
       </ul>
       <h3>テスト結果の概要</h3>
