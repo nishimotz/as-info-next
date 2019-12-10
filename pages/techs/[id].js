@@ -14,7 +14,12 @@ const Tech = ({ query }) => {
   const true_id = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
   const tech = techs[true_id];
   const criterion_ids = Object.keys(criteria).filter(
-    key => criteria[key].techs.includes(true_id)
+    key => {
+      if (criteria[key] && criteria[key].techs) {
+        return criteria[key].techs.includes(true_id);
+      }
+      return false;
+    }
   );
   const test_ids = Object.keys(tests).filter(
     key => tests[key].techs.includes(true_id)

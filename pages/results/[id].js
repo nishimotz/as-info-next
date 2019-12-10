@@ -11,13 +11,11 @@ import SEO from '../../next-seo.config'
 
 const ResultTableRow = (props) => {
   const result = props.result;
-  const tableRowIndex = props.index + 1;
   const contents = result.contents;
   if (contents.length === 1) {
     return (
     <tr>
-      <td>{tableRowIndex}</td>
-      <td>{result.id}</td>
+      <th scope="row">{result.id}</th>
       <td><ul>
         <li>{result.os}</li>
         <li>{result.user_agent}</li>
@@ -43,8 +41,7 @@ const ResultTableRow = (props) => {
       <tr key={index}>
         {index === 0 && (
           <>
-            <td rowSpan={contents.length}>{tableRowIndex}</td>
-            <td rowSpan={contents.length}>{result.id}</td>
+            <th rowSpan={contents.length} scope="rowgroup">{result.id}</th>
             <td rowSpan={contents.length}><ul>
               <li>{result.os}</li>
               <li>{result.user_agent}</li>
@@ -125,9 +122,8 @@ const Result = ({ query }) => {
       <table>
         <thead>
           <tr>
-            <th scope="col">行番号</th>
-            <th scope="col">テストID</th>
-            <th scope="col">テスト環境</th>
+            <th scope="col">ID</th>
+            <th scope="col">環境</th>
             <th scope="col">操作内容</th>
             <th scope="col">得られた結果</th>
             <th scope="col">判断</th>
