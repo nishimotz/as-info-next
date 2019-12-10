@@ -76,16 +76,8 @@ const Result = ({ query }) => {
   const { id } = router.query
   const true_id = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
   const test = tests[true_id];
+  const criterion_ids = test.criteria;
   const tech_ids = test.techs;
-  const criterion_ids = Object.keys(criteria).filter((key) => {
-    let found = false;
-    tech_ids.forEach((tech_id) => {
-      if (criteria[key].techs.includes(tech_id)) {
-        found = true;
-      }
-    })
-    return found;
-  });
   const result_ids = results.filter(result => result.test === true_id);
   return (
     <>

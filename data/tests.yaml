@@ -2,7 +2,7 @@
 0001-01:
   title: 同じリンクの中に入れた画像 (代替テキストなし) とテキスト (1. 画像 2. テキスト)
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0001-01.md
-  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01
+  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01.html
   criteria:
     - 1.1.1
     - 2.4.4
