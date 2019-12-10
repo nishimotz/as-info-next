@@ -32,7 +32,6 @@
       procedure: 手順のテスト2
       actual: 得られた結果テスト
       judgment: 満たしている
-  comment: コメントのテスト2
 - id: 79
   test: 0001-02
   os: Windows 10 Home Version 1809, Build 17763.195

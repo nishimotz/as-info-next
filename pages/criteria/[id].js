@@ -41,7 +41,7 @@ const Criterion = ({ query }) => {
               <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</a>
               ) : tech_id}
             </td>
-            <td>{tech ? tech.target : ''}</td>
+            <td>{tech && tech.target}</td>
             <td></td>
           </tr>
           );})}

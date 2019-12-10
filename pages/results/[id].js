@@ -11,18 +11,18 @@ import SEO from '../../next-seo.config'
 
 const ResultTableRow = (props) => {
   const result = props.result;
-  const index = props.index;
+  const tableRowIndex = props.index + 1;
   const contents = result.contents;
   if (contents.length === 1) {
     return (
-    <tr key={result.id} className="ok">
-      <td>{index + 1}</td>
+    <tr>
+      <td>{tableRowIndex}</td>
       <td>{result.id}</td>
       <td><ul>
         <li>{result.os}</li>
         <li>{result.user_agent}</li>
         <li>{result.assistive_tech}</li>
-        {result.assistive_tech_config ? (<li>{result.assistive_tech_config}</li>) : ''}
+        {result.assistive_tech_config && (<li>{result.assistive_tech_config}</li>)}
       </ul></td>
       <td>
         {contents[0].procedure}
@@ -35,36 +35,39 @@ const ResultTableRow = (props) => {
       </td>
       <td>{result.comment}</td>
     </tr>
-
     );
   }
   return (
-    <tr key={result.id}>
-      <td>{index + 1}</td>
-      <td>{result.id}</td>
-      <td><ul>
-        <li>{result.os}</li>
-        <li>{result.user_agent}</li>
-        <li>{result.assistive_tech}</li>
-        {result.assistive_tech_config ? (<li>{result.assistive_tech_config}</li>) : ''}
-      </ul></td>
-      <td><ol>
-        {contents.map((item, index) => (
-          <li key={index}>{item.procedure}</li>
-        ))}
-      </ol></td>
-      <td><ol>
-        {contents.map((item, index) => (
-          <li key={index}>{item.actual}</li>
-        ))}
-      </ol></td>
-      <td><ol>
-        {contents.map((item, index) => (
-          <li key={index}>{item.judgment === '満たしている' ? '○' : item.judgment}</li>
-        ))}
-      </ol></td>
-      <td>{result.comment}</td>
-    </tr>
+    <>
+    {contents.map((item, index) => (
+      <tr key={index}>
+        {index === 0 && (
+          <>
+            <td rowSpan={contents.length}>{tableRowIndex}</td>
+            <td rowSpan={contents.length}>{result.id}</td>
+            <td rowSpan={contents.length}><ul>
+              <li>{result.os}</li>
+              <li>{result.user_agent}</li>
+              <li>{result.assistive_tech}</li>
+              {result.assistive_tech_config && (<li>{result.assistive_tech_config}</li>)}
+            </ul></td>
+          </>
+        )}
+        <td>
+          {item.procedure}
+        </td>
+        <td>
+          {item.actual}
+        </td>
+        <td>
+          {item.judgment === '満たしている' ? '○' : item.judgment}
+        </td>
+        {index === 0 && (
+          <td rowSpan={contents.length}>{result.comment}</td>
+        )}
+      </tr>
+    ))}
+    </>
   )
 };
 
