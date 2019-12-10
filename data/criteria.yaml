@@ -10,3 +10,8 @@
   level: A
   techs:
     - H30
+2.4.9:
+  title: リンクの目的 (リンクのみ)
+  level: AAA
+  techs:
+    - G91

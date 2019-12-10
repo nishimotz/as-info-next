@@ -11,7 +11,7 @@ export default () =>
   <Logo/>
   <h1>アクセシビリティ・サポーテッド（AS）情報：{metadata.edition}</h1>
   <ul>
-    <li>公開日：{metadata.pubDate}</li>
+    <li>公開日：{metadata.pub_date}</li>
     <li>作成者：{metadata.author}</li>
     <li>前のバージョン：<a href="https://waic.jp/docs/as/info/201406/index.html">2014年6月版</a></li>
   </ul>

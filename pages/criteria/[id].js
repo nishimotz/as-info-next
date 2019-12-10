@@ -10,19 +10,19 @@ import SEO from '../../next-seo.config'
 const Criterion = ({ query }) => {
   const router = useRouter()
   const { id } = router.query
-  const trueId = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
-  const criterion = criteria[trueId];
+  const true_id = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
+  const criterion = criteria[true_id];
   return (
     <>
-      <NextSeo config={Object.assign(SEO, {title:'達成基準' + trueId})}/>
+      <NextSeo config={Object.assign(SEO, {title:'達成基準' + true_id})}/>
       <Logo/>
-      <h1>アクセシビリティ・サポーテッド（AS）情報：達成基準{trueId}</h1>
+      <h1>アクセシビリティ・サポーテッド（AS）情報：達成基準{true_id}</h1>
       <ul>
-        <li>公開日：{metadata.pubDate}</li>
+        <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
         <li><a href="../">戻る</a></li>
       </ul>
-      <h2>{trueId} {criterion.title} (等級{criterion.level})</h2>
+      <h2>{true_id} {criterion.title} (等級{criterion.level})</h2>
       <table>
         <thead>
           <tr>
@@ -32,15 +32,19 @@ const Criterion = ({ query }) => {
           </tr>
         </thead>
         <tbody>
-          {criterion.techs.map(key => (
-          <tr key={key} className="ok">
+          {criterion.techs.map(tech_id => {
+          const tech = techs[tech_id];
+          return (
+          <tr key={tech_id} className="ok">
             <td>
-              <a href={'../techs/' + key + '.html'}>{key}: {techs[key].title}</a>
+              {tech ? (
+              <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</a>
+              ) : tech_id}
             </td>
-            <td>{techs[key].target}</td>
+            <td>{tech ? tech.target : ''}</td>
             <td></td>
           </tr>
-          ))}
+          );})}
         </tbody>
       </table>
     </>
