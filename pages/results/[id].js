@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../components/Logo'
 import { useRouter } from 'next/router'
+import metadata from '../../data/metadata.yaml'
 import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
@@ -13,7 +14,7 @@ const Result = ({ query }) => {
   const { id } = router.query
   const trueId = id.replace(/.html$/,'') // '.html' is appended to the routing path when exporting, so remove it.
   const test = tests[trueId];
-  const tech_ids = Object.keys(techs).filter((key) => techs[key].tests.includes(trueId));
+  const tech_ids = test.techs;
   const criterion_ids = Object.keys(criteria).filter((key) => {
     let found = false;
     tech_ids.forEach((tech_id) => {
@@ -23,14 +24,15 @@ const Result = ({ query }) => {
     })
     return found;
   });
+  const result_ids = results.filter(result => result.test === trueId);
   return (
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + trueId})}/>
       <Logo/>
       <h1>アクセシビリティ・サポーテッド（AS）情報：テスト{trueId}</h1>
       <ul>
-        <li>公開日：2019年*月*日</li>
-        <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+        <li>公開日：{metadata.pubDate}</li>
+        <li>作成者：{metadata.author}</li>
         <li><a href="../">戻る</a></li>
       </ul>
       <h2>テスト{trueId}: {test.title}</h2>
@@ -63,7 +65,7 @@ const Result = ({ query }) => {
       </ul>
       <h3>テスト結果の概要</h3>
       <ul>
-        <li>テストの件数: xx件</li>
+        <li>テストの件数: {result_ids.length}件</li>
         <li>○ の数: xx件</li>
         <li>× の数: xx件</li>
       </ul>
@@ -80,9 +82,7 @@ const Result = ({ query }) => {
           </tr>
         </thead>
         <tbody>
-          {results.filter(
-            result => result.test === trueId
-          ).map((result, index) => (
+          {result_ids.map((result, index) => (
           <tr key={result.id} className="ok">
             <td>{index + 1}</td>
             <td>{result.id}</td>

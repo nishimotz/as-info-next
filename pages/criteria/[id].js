@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../components/Logo'
 import { useRouter } from 'next/router'
+import metadata from '../../data/metadata.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
 import NextSeo from 'next-seo'
@@ -17,8 +18,8 @@ const Criterion = ({ query }) => {
       <Logo/>
       <h1>アクセシビリティ・サポーテッド（AS）情報：達成基準{trueId}</h1>
       <ul>
-        <li>公開日：2019年*月*日</li>
-        <li>作成者：ウェブアクセシビリティ基盤委員会（WAIC）実装ワーキンググループ（WG2）</li>
+        <li>公開日：{metadata.pubDate}</li>
+        <li>作成者：{metadata.author}</li>
         <li><a href="../">戻る</a></li>
       </ul>
       <h2>{trueId} {criterion.title} (等級{criterion.level})</h2>
