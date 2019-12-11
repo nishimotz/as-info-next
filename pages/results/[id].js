@@ -32,6 +32,7 @@ const ResultTableRow = (props) => {
         {contents[0].judgment === '満たしている' ? '○' : contents[0].judgment}
       </td>
       <td>{result.comment}</td>
+      <td></td>
     </tr>
     );
   }
@@ -60,7 +61,10 @@ const ResultTableRow = (props) => {
           {item.judgment === '満たしている' ? '○' : item.judgment}
         </td>
         {index === 0 && (
+          <>
           <td rowSpan={contents.length}>{result.comment}</td>
+          <td rowSpan={contents.length}></td>
+          </>
         )}
       </tr>
     ))}
@@ -128,6 +132,7 @@ const Result = ({ query }) => {
             <th scope="col">得られた結果</th>
             <th scope="col">判断</th>
             <th scope="col">備考</th>
+            <th scope="col">テスト実施者</th>
           </tr>
         </thead>
         <tbody>
@@ -136,6 +141,9 @@ const Result = ({ query }) => {
           ))}
         </tbody>
       </table>
+      <h3>ライセンス</h3>
+      <p>各検証結果は、それぞれの作成者を原著作者とし、クリエイティブ・コモンズ・ライセンスの下でライセンスされています。原著作者名は、それぞれの検証結果をご覧ください。また、ご利用になる前に利用許諾条項を必ずご確認ください。</p>
+      <p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="by-sa" width="88" height="31"/> 利用許諾条項（表示 – 継承 4.0 日本）の確認</a></p>
     </>
   )
 }
