@@ -22,13 +22,12 @@ const Criterion = ({ query }) => {
         <li>作成者：{metadata.author}</li>
         <li><a href="../">戻る</a></li>
       </ul>
-      <h2>{true_id} {criterion.title} (等級{criterion.level})</h2>
+      <h2>{true_id} {criterion.title}に関する達成基準 (等級{criterion.level})</h2>
       <table>
         <thead>
           <tr>
             <th scope="col">達成方法</th>
             <th scope="col">対象</th>
-            <th scope="col">達成可否</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +41,6 @@ const Criterion = ({ query }) => {
               ) : tech_id}
             </td>
             <td>{tech && tech.target}</td>
-            <td></td>
           </tr>
           );})}
         </tbody>

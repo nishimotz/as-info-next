@@ -19,7 +19,7 @@ export default () =>
   <ul>
     {Object.keys(criteria).map(
       key => <li key={key}>
-        <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</a>
+        <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}に関する達成基準</a>
       </li>
     )}
   </ul>
