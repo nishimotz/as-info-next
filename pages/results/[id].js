@@ -91,7 +91,7 @@ const Result = ({ query }) => {
       <ul>
         {criterion_ids.map(criterion_id => (
         <li key={criterion_id}>
-          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id}: {criteria[criterion_id].title} (等級{criteria[criterion_id].level})</a>
+          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id}: {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</a>
         </li>
         ))}
       </ul>
