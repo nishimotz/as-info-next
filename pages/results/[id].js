@@ -120,7 +120,7 @@ const Result = ({ query }) => {
       </ul>
       <h3>テスト結果の概要</h3>
       <ul>
-        <li>テストの件数: {result_ids.length}件</li>
+        <li>テスト結果の件数: {result_ids.length}件</li>
       </ul>
       <h3>テスト結果の詳細</h3>
       <table>

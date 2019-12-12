@@ -4,9 +4,14 @@ import { useRouter } from 'next/router'
 import metadata from '../../data/metadata.yaml'
 import techs from '../../data/techs.yaml'
 import tests from '../../data/tests.yaml'
+import results from '../../data/results.yaml'
 import criteria from '../../data/criteria.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
+
+const get_results_count = (test_id) => {
+  return results.filter(result => result.test === test_id).length;
+}
 
 const Tech = ({ query }) => {
   const router = useRouter()
@@ -47,7 +52,7 @@ const Tech = ({ query }) => {
       <ul>
         {test_ids.map(test_id => (
         <li key={test_id}>
-          <a href={'../results/' + test_id + '.html'}>テスト{test_id}</a>
+          <a href={'../results/' + test_id + '.html'}>テスト{test_id}: {tests[test_id].title} ({get_results_count(test_id)}件のテスト結果)</a>
         </li>
         ))}
       </ul>
