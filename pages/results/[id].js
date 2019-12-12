@@ -137,7 +137,7 @@ const Result = ({ query }) => {
         </thead>
         <tbody>
           {result_ids.map((result, index) => (
-            <ResultTableRow result={result} index={index}/>
+            <ResultTableRow result={result} index={index} key={index}/>
           ))}
         </tbody>
       </table>
