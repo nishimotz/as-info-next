@@ -10,6 +10,8 @@ import results from '../../data/results.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
+const larger_style = { minWidth: '6em', maxWidth: '10em', overflowX: 'auto' };
+
 const ResultTableRow = (props) => {
   const result = props.result;
   const contents = result.contents;
@@ -17,23 +19,23 @@ const ResultTableRow = (props) => {
     return (
     <tr>
       <th scope="row">{result.id}</th>
-      <td><ul>
+      <td style={larger_style}><ul>
         <li>{result.os}</li>
         <li>{result.user_agent}</li>
-        <li>{result.assistive_tech}</li>
+        {result.assistive_tech && (<li>{result.assistive_tech}</li>)}
         {result.assistive_tech_config && (<li>{result.assistive_tech_config}</li>)}
       </ul></td>
-      <td>
+      <td style={larger_style}>
         {contents[0].procedure}
       </td>
-      <td>
+      <td style={larger_style}>
         {contents[0].actual}
       </td>
       <td>
-        {contents[0].judgment === '満たしている' ? '○' : contents[0].judgment}
+        {contents[0].judgment === '満たしている' ? '○' : '×'}
       </td>
-      <td>{result.comment}</td>
-      <td></td>
+      <td style={larger_style}>{result.comment}</td>
+      <td style={larger_style}></td>
     </tr>
     );
   }
@@ -44,7 +46,7 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
             <th rowSpan={contents.length} scope="rowgroup">{result.id}</th>
-            <td rowSpan={contents.length}><ul>
+            <td rowSpan={contents.length} style={larger_style}><ul>
               <li>{result.os}</li>
               <li>{result.user_agent}</li>
               <li>{result.assistive_tech}</li>
@@ -52,19 +54,19 @@ const ResultTableRow = (props) => {
             </ul></td>
           </>
         )}
-        <td>
+        <td style={larger_style}>
           {item.procedure}
         </td>
-        <td>
+        <td style={larger_style}>
           {item.actual}
         </td>
         <td>
-          {item.judgment === '満たしている' ? '○' : item.judgment}
+          {item.judgment === '満たしている' ? '○' : '×'}
         </td>
         {index === 0 && (
           <>
-          <td rowSpan={contents.length}>{result.comment}</td>
-          <td rowSpan={contents.length}></td>
+          <td rowSpan={contents.length} style={larger_style}>{result.comment}</td>
+          <td rowSpan={contents.length} style={larger_style}></td>
           </>
         )}
       </tr>
