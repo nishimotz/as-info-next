@@ -10,7 +10,8 @@ import results from '../../data/results.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
-const larger_style = { minWidth: '6em', maxWidth: '10em', overflowX: 'auto' };
+const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
+const list_item_style = { overflowWrap: 'break-word' };
 
 const ResultTableRow = (props) => {
   const result = props.result;
@@ -19,23 +20,23 @@ const ResultTableRow = (props) => {
     return (
     <tr>
       <th scope="row">{result.id}</th>
-      <td style={larger_style}><ul>
-        <li>{result.os}</li>
-        <li>{result.user_agent}</li>
-        {result.assistive_tech && (<li>{result.assistive_tech}</li>)}
-        {result.assistive_tech_config && (<li>{result.assistive_tech_config}</li>)}
+      <td style={larger_th_style}><ul>
+        <li style={list_item_style}>{result.os}</li>
+        <li style={list_item_style}>{result.user_agent}</li>
+        {result.assistive_tech && (<li style={list_item_style}>{result.assistive_tech}</li>)}
+        {result.assistive_tech_config && (<li style={list_item_style}>{result.assistive_tech_config}</li>)}
       </ul></td>
-      <td style={larger_style}>
+      <td style={larger_th_style}>
         {contents[0].procedure}
       </td>
-      <td style={larger_style}>
+      <td style={larger_th_style}>
         {contents[0].actual}
       </td>
       <td>
         {contents[0].judgment === '満たしている' ? '○' : '×'}
       </td>
-      <td style={larger_style}>{result.comment}</td>
-      <td style={larger_style}></td>
+      <td style={larger_th_style}>{result.comment}</td>
+      <td style={larger_th_style}></td>
     </tr>
     );
   }
@@ -46,18 +47,18 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
             <th rowSpan={contents.length} scope="rowgroup">{result.id}</th>
-            <td rowSpan={contents.length} style={larger_style}><ul>
-              <li>{result.os}</li>
-              <li>{result.user_agent}</li>
-              <li>{result.assistive_tech}</li>
-              {result.assistive_tech_config && (<li>{result.assistive_tech_config}</li>)}
+            <td rowSpan={contents.length} style={larger_th_style}><ul>
+              <li style={list_item_style}>{result.os}</li>
+              <li style={list_item_style}>{result.user_agent}</li>
+              {result.assistive_tech && (<li style={list_item_style}>{result.assistive_tech}</li>)}
+              {result.assistive_tech_config && (<li style={list_item_style}>{result.assistive_tech_config}</li>)}
             </ul></td>
           </>
         )}
-        <td style={larger_style}>
+        <td style={larger_th_style}>
           {item.procedure}
         </td>
-        <td style={larger_style}>
+        <td style={larger_th_style}>
           {item.actual}
         </td>
         <td>
@@ -65,8 +66,8 @@ const ResultTableRow = (props) => {
         </td>
         {index === 0 && (
           <>
-          <td rowSpan={contents.length} style={larger_style}>{result.comment}</td>
-          <td rowSpan={contents.length} style={larger_style}></td>
+          <td rowSpan={contents.length} style={larger_th_style}>{result.comment}</td>
+          <td rowSpan={contents.length} style={larger_th_style}></td>
           </>
         )}
       </tr>
