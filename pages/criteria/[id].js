@@ -24,6 +24,7 @@ const Criterion = ({ query }) => {
       <ul>
         <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
+        <li><a href="../">戻る</a></li>
       </ul>
       <h2>検証結果を含む達成方法</h2>
       <table>

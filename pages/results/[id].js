@@ -95,6 +95,7 @@ const Result = ({ query }) => {
       <ul>
         <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
+        <li><a href="../">戻る</a></li>
       </ul>
       <h2>テストの対象となる達成基準</h2>
       <ul>
