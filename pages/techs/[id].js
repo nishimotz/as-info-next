@@ -33,18 +33,17 @@ const Tech = ({ query }) => {
     <>
       <NextSeo config={Object.assign(SEO, {title:'達成方法' + true_id})}/>
       <Logo/>
-      <h1>アクセシビリティ・サポーテッド（AS）情報：達成方法{true_id}</h1>
+      <h1>アクセシビリティ サポーテッド（AS）情報：達成方法{true_id}</h1>
       <ul>
         <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
-        <li><a href="../">戻る</a></li>
       </ul>
       <h2>{true_id}: {tech.title}</h2>
       <h3>関連する達成基準</h3>
       <ul>
         {criterion_ids.map(criterion_id => (
         <li key={criterion_id}>
-          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title}に関する達成基準 (レベル{criteria[criterion_id].level})</a>
+          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</a>
         </li>
         ))}
       </ul>

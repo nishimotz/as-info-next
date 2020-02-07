@@ -84,11 +84,10 @@ const Result = ({ query }) => {
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + true_id})}/>
       <Logo/>
-      <h1>アクセシビリティ・サポーテッド（AS）情報：テスト{true_id}</h1>
+      <h1>アクセシビリティ サポーテッド（AS）情報：テスト{true_id}</h1>
       <ul>
         <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
-        <li><a href="../">戻る</a></li>
       </ul>
       <h2>テスト{true_id}: {test.title}</h2>
       <h3>関連する達成基準の実装方法一覧</h3>
