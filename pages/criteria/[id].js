@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../components/Logo'
+import H1 from '../../components/H1'
 import { useRouter } from 'next/router'
 import metadata from '../../data/metadata.yaml'
 import criteria from '../../data/criteria.yaml'
@@ -16,17 +17,19 @@ const Criterion = ({ query }) => {
     <>
       <NextSeo config={Object.assign(SEO, {title:'達成基準' + true_id})}/>
       <Logo/>
-      <h1>アクセシビリティ サポーテッド（AS）情報：達成基準{true_id}</h1>
+      <H1
+        first='アクセシビリティ サポーテッド（AS）情報：達成基準'
+        second={`${true_id} ${criterion.title} (レベル ${criterion.level})`}
+      />
       <ul>
         <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
       </ul>
-      <h2>{true_id} {criterion.title} (レベル{criterion.level})</h2>
+      <h2>検証結果を含む達成方法</h2>
       <table>
         <thead>
           <tr>
             <th scope="col">達成方法</th>
-            <th scope="col">対象</th>
           </tr>
         </thead>
         <tbody>
@@ -39,7 +42,6 @@ const Criterion = ({ query }) => {
               <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</a>
               ) : tech_id}
             </td>
-            <td>{tech && tech.target}</td>
           </tr>
           );})}
         </tbody>

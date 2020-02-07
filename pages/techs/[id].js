@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../components/Logo'
+import H1 from '../../components/H1'
 import { useRouter } from 'next/router'
 import metadata from '../../data/metadata.yaml'
 import techs from '../../data/techs.yaml'
@@ -33,13 +34,15 @@ const Tech = ({ query }) => {
     <>
       <NextSeo config={Object.assign(SEO, {title:'達成方法' + true_id})}/>
       <Logo/>
-      <h1>アクセシビリティ サポーテッド（AS）情報：達成方法{true_id}</h1>
+      <H1
+        first='アクセシビリティ サポーテッド（AS）情報：達成方法'
+        second={`${true_id}: ${tech.title}`}
+      />
       <ul>
         <li>公開日：{metadata.pub_date}</li>
         <li>作成者：{metadata.author}</li>
       </ul>
-      <h2>{true_id}: {tech.title}</h2>
-      <h3>関連する達成基準</h3>
+      <h2>テストの対象となる達成基準</h2>
       <ul>
         {criterion_ids.map(criterion_id => (
         <li key={criterion_id}>
@@ -47,11 +50,11 @@ const Tech = ({ query }) => {
         </li>
         ))}
       </ul>
-      <h3>関連するテストケース</h3>
+      <h2>検証結果を含むテストケース</h2>
       <ul>
         {test_ids.map(test_id => (
         <li key={test_id}>
-          <a href={'../results/' + test_id + '.html'}>テスト{test_id}: {tests[test_id].title} ({getResultsCount(test_id)}件のテスト結果)</a>
+          <a href={'../results/' + test_id + '.html'}>{test_id}: {tests[test_id].title} (結果:{getResultsCount(test_id)}件)</a>
         </li>
         ))}
       </ul>
