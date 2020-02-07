@@ -83,7 +83,16 @@ const Result = ({ query }) => {
   const test = tests[true_id];
   const criterion_ids = test.criteria;
   const tech_ids = test.techs;
-  const result_ids = results.filter(result => result.test === true_id);
+  const result_ids = results.filter(result => result.test === true_id).sort((a, b) => {
+    let a_env = (typeof a.os === 'undefined') ? '' : a.os.toLowerCase();
+    let b_env = (typeof b.os === 'undefined') ? '' : b.os.toLowerCase();
+    if (a_env > b_env) {
+      return 1;
+    } else if (a_env == b_env) {
+      return 0;
+    }
+    return -1;
+  });
   return (
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + true_id})}/>
