@@ -26,14 +26,14 @@ const ResultTableRow = (props) => {
         {result.assistive_tech && (<li style={list_item_style}>{result.assistive_tech}</li>)}
         {result.assistive_tech_config && (<li style={list_item_style}>{result.assistive_tech_config}</li>)}
       </ul></td>
+      <td>
+        {contents[0].judgment === '満たしている' ? '○' : '×'}
+      </td>
       <td style={larger_th_style}>
         {contents[0].procedure}
       </td>
       <td style={larger_th_style}>
         {contents[0].actual}
-      </td>
-      <td>
-        {contents[0].judgment === '満たしている' ? '○' : '×'}
       </td>
       <td style={larger_th_style}>{result.comment}</td>
       <td style={larger_th_style}></td>
@@ -55,14 +55,14 @@ const ResultTableRow = (props) => {
             </ul></td>
           </>
         )}
+        <td>
+          {item.judgment === '満たしている' ? '○' : '×'}
+        </td>
         <td style={larger_th_style}>
           {item.procedure}
         </td>
         <td style={larger_th_style}>
           {item.actual}
-        </td>
-        <td>
-          {item.judgment === '満たしている' ? '○' : '×'}
         </td>
         {index === 0 && (
           <>
@@ -124,22 +124,22 @@ const Result = ({ query }) => {
       </ul>
       <h2>テスト詳細</h2>
       <ul>
-        <li><a href={test.document}>テスト内容 {true_id}</a></li>
-        <li><a href={test.code}>テストコード {true_id}</a></li>
+        <li><a href={test.document}>テストケース {true_id} の詳細を表示</a></li>
+        <li><a href={test.code}>テストコード {true_id} をユーザーエージェントで表示</a></li>
       </ul>
       <h2>検証結果一覧</h2>
       <ul>
         <li>テスト結果の件数: {result_ids.length}件</li>
       </ul>
-      <h2>テスト結果の詳細</h2>
+      <h3>テスト結果の詳細</h3>
       <table>
         <thead>
           <tr>
             <th scope="col">ID</th>
             <th scope="col">環境</th>
+            <th scope="col">判断</th>
             <th scope="col">操作内容</th>
             <th scope="col">得られた結果</th>
-            <th scope="col">判断</th>
             <th scope="col">備考</th>
             <th scope="col">テスト実施者</th>
           </tr>

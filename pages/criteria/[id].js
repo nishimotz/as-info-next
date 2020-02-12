@@ -27,26 +27,17 @@ const Criterion = ({ query }) => {
         <li><a href="../">戻る</a></li>
       </ul>
       <h2>検証結果を含む達成方法</h2>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">達成方法</th>
-          </tr>
-        </thead>
-        <tbody>
-          {criterion.techs.map(tech_id => {
-          const tech = techs[tech_id];
-          return (
-          <tr key={tech_id} className="ok">
-            <td>
-              {tech ? (
-              <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</a>
-              ) : tech_id}
-            </td>
-          </tr>
-          );})}
-        </tbody>
-      </table>
+      <ul>
+        {criterion.techs.map(tech_id => {
+        const tech = techs[tech_id];
+        return (
+        <li key={tech_id}>
+          {tech ? (
+          <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {tech.title}</a>
+          ) : tech_id}
+        </li>
+        );})}
+      </ul>
     </>
   )
 }
