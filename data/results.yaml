@@ -4509,22 +4509,6 @@
   os: エディション：windows10 pro バージョン：1803 OSビルド：17134.556
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
-  assistive_tech_config: null
-  contents:
-  - expected: 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
-    procedure: 矢印キー下向きで操作した。
-    actual: 「詳細説明あり」と読み上げた。
-    judgment: 満たしている
-  - expected: longdesc 属性の値として指定されたリンク先の記述内容を知るための何らかの手段が提供されている
-    procedure: 矢印キー下向きで操作した。
-    actual: 画像「詳細説明あり 会員数の遷移グラフ」としか読み上げずリンク先の情報は読み上げない。
-    judgment: 満たしていない
-  comment: null
-- id: 246
-  test: 0011-01
-  os: エディション：windows10 pro バージョン：1803 OSビルド：17134.556
-  user_agent: Fierfox ver64.0.2
-  assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: 
   contents:
   - expected: 画像に longdesc 属性が指定されていることを知るための何らかの手段が提供されている
