@@ -422,7 +422,9 @@
   - H49
 0016-01:
   title: ページの言語
-  code: https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html
+  code:
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html
+  - https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-02.html
   document: https://github.com/waic/as_test/blob/master/WAIC-TEST/HTML/WAIC-TEST-0016-01.md
   criteria:
   - 3.1.1

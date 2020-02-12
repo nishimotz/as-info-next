@@ -93,6 +93,23 @@ const Result = ({ query }) => {
     }
     return -1;
   });
+  let test_code_elem;
+  if (typeof test.code === 'string') {
+    test_code_elem = (
+      <a href={test.code}>テストコード {true_id} をユーザーエージェントで表示</a>
+    );
+  } else {
+    test_code_elem = (
+      <>
+      <div>テストコード {true_id} をユーザーエージェントで表示</div>
+        <ul>
+        {test.code.map((item, index) => (
+          <li key={index}><a href={item}>{item.split("/").slice(-1)[0]}</a></li>
+        ))}
+        </ul>
+      </>
+    );
+  }
   return (
     <>
       <NextSeo config={Object.assign(SEO, {title:'テスト' + true_id})}/>
@@ -125,7 +142,7 @@ const Result = ({ query }) => {
       <h2>テスト詳細</h2>
       <ul>
         <li><a href={test.document}>テストケース {true_id} の詳細を表示</a></li>
-        <li><a href={test.code}>テストコード {true_id} をユーザーエージェントで表示</a></li>
+        <li>{test_code_elem}</li>
       </ul>
       <h2>検証結果一覧</h2>
       <ul>
