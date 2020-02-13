@@ -60,7 +60,7 @@
   comment: null
 - id: 6
   test: 0010-01
-  os: Windows 10 / 1809 / 17763.195
+  os: Windows 10 1809
   user_agent: Microsoft Edge 44.17763.1.0
   assistive_tech: Windows ナレーター
   assistive_tech_config: null
@@ -214,7 +214,7 @@
   comment: null
 - id: 15
   test: 0003-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1372,7 +1372,7 @@
   comment: null
 - id: 78
   test: 0001-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1384,7 +1384,7 @@
   comment: null
 - id: 79
   test: 0001-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1396,7 +1396,7 @@
   comment: null
 - id: 80
   test: 0001-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1408,7 +1408,7 @@
   comment: null
 - id: 81
   test: 0002-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1420,7 +1420,7 @@
   comment: null
 - id: 82
   test: 0002-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1432,7 +1432,7 @@
   comment: null
 - id: 83
   test: 0003-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1460,7 +1460,7 @@
   comment: null
 - id: 84
   test: 0003-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1490,7 +1490,7 @@
   comment: null
 - id: 85
   test: 0003-04
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1503,7 +1503,7 @@
   comment: null
 - id: 86
   test: 0004-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1515,7 +1515,7 @@
   comment: Tabキーで移動した場合、「リンク」の後に「Poly」と発音しているように思います。
 - id: 87
   test: 0004-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1529,7 +1529,7 @@
   comment: null
 - id: 88
   test: 0004-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1543,7 +1543,7 @@
   comment: null
 - id: 89
   test: 0001-01
-  os: Windows 10 Pro、1803、17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Exprorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -1555,7 +1555,7 @@
   comment: null
 - id: 90
   test: 0004-04
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1567,7 +1567,7 @@
   comment: null
 - id: 91
   test: 0004-05
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1579,7 +1579,7 @@
   comment: null
 - id: 92
   test: 0001-01
-  os: Windows 10 Pro、1803、17134.472
+  os: Windows 10 Pro 1803
   user_agent: NetReader2 Version 2.32 β2
   assistive_tech: null
   assistive_tech_config: '[閲覧オプション]の[レイアウト用の画像なら表示しない]を選択'
@@ -1591,7 +1591,7 @@
   comment: null
 - id: 93
   test: 0005-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1603,7 +1603,7 @@
   comment: null
 - id: 94
   test: 0006-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1615,7 +1615,7 @@
   comment: null
 - id: 95
   test: 0006-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1627,7 +1627,7 @@
   comment: null
 - id: 96
   test: 0006-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1641,7 +1641,7 @@
   comment: リンクにフォーカスしてNVDAキー＋Tabキーを押下すると、リンクテキストに加えtitle属性値「ウェブアクセシビリティ基盤委員会公式サイト」が読み上げられ、期待される結果を満たすこととなる。
 - id: 97
   test: 0001-02
-  os: Windows 10 Pro、1803、17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Exprorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -1653,7 +1653,7 @@
   comment: null
 - id: 98
   test: 0007-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1673,7 +1673,7 @@
   comment: null
 - id: 99
   test: 0001-03
-  os: Windows 10 Pro、1803、17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Exprorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -1685,7 +1685,7 @@
   comment: null
 - id: 100
   test: 0008-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1697,7 +1697,7 @@
   comment: null
 - id: 101
   test: 0009-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1709,7 +1709,7 @@
   comment: null
 - id: 102
   test: 0002-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: IE 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -1721,7 +1721,7 @@
   comment: null
 - id: 103
   test: 0002-02
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -1737,7 +1737,7 @@
   comment: null
 - id: 104
   test: 0010-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1749,7 +1749,7 @@
   comment: null
 - id: 105
   test: 0010-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1761,7 +1761,7 @@
   comment: null
 - id: 106
   test: 0010-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1773,7 +1773,7 @@
   comment: null
 - id: 107
   test: 0010-04
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1789,7 +1789,7 @@
   comment: null
 - id: 108
   test: 0010-05
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1805,7 +1805,7 @@
   comment: null
 - id: 109
   test: 0010-06
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1825,7 +1825,7 @@
   comment: null
 - id: 110
   test: 0010-07
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1839,7 +1839,7 @@
   comment: null
 - id: 111
   test: 0010-08
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1851,7 +1851,7 @@
   comment: null
 - id: 112
   test: 0011-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1869,7 +1869,7 @@
   comment: null
 - id: 113
   test: 0011-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1890,7 +1890,7 @@
   comment: section要素とh1要素を併用している場合でも、読み上げられる見出しレベルは変化しなかった。
 - id: 114
   test: 0011-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1902,7 +1902,7 @@
   comment: null
 - id: 115
   test: 0012-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1920,7 +1920,7 @@
   comment: null
 - id: 116
   test: 0012-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1936,7 +1936,7 @@
   comment: null
 - id: 117
   test: 0012-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1953,7 +1953,7 @@
   comment: null
 - id: 118
   test: 0012-04
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1965,7 +1965,7 @@
   comment: null
 - id: 119
   test: 0012-05
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -1989,7 +1989,7 @@
   comment: null
 - id: 120
   test: 0013-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2007,7 +2007,7 @@
   comment: null
 - id: 121
   test: 0014-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2036,7 +2036,7 @@
     リストの終了” と読み上げられる場合は OK と判断」とあるので、満たすと判断しました。
 - id: 122
   test: 0014-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2061,7 +2061,7 @@
     と判断」とあるので、満たすと判断しました。
 - id: 123
   test: 0014-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2085,7 +2085,7 @@
   comment: null
 - id: 124
   test: 0015-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2103,7 +2103,7 @@
   comment: null
 - id: 125
   test: 0015-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2121,7 +2121,7 @@
   comment: null
 - id: 126
   test: 0015-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2137,7 +2137,7 @@
   comment: null
 - id: 127
   test: 0015-04
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2153,7 +2153,7 @@
   comment: null
 - id: 128
   test: 0015-05
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2165,7 +2165,7 @@
   comment: null
 - id: 129
   test: 0015-06
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2177,7 +2177,7 @@
   comment: null
 - id: 130
   test: 0016-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2189,7 +2189,7 @@
   comment: null
 - id: 131
   test: 0017-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2206,7 +2206,7 @@
   comment: null
 - id: 132
   test: 0017-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2218,7 +2218,7 @@
   comment: null
 - id: 133
   test: 0018-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2242,7 +2242,7 @@
   comment: null
 - id: 134
   test: 0018-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2268,7 +2268,7 @@
   comment: fieldset 要素内のラジオボタン/チェックボックスが初めて読み上げられるときに、legend要素の内容が読み上げられます。グループ内のラジオボタン/チェックボックスを引き続き読み上げる場合は、legend要素の内容は読み上げられません。
 - id: 135
   test: 0018-03
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2292,7 +2292,7 @@
   comment: null
 - id: 136
   test: 0019-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2305,7 +2305,7 @@
   comment: null
 - id: 137
   test: 0019-02
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2318,7 +2318,7 @@
   comment: NVDAキー＋上矢印キーは現在行の読み上げを行います。
 - id: 138
   test: 0022-01
-  os: Windows 10 Home Version 1809, Build 17763.195
+  os: Windows 10 Home Version 1809
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4jp
   assistive_tech_config: null
@@ -2436,7 +2436,7 @@
   comment: null
 - id: 147
   test: 0001-01
-  os: iPhone6s 12.0.1
+  os: iOS 12.0.1
   user_agent: Safari
   assistive_tech: VoiceOver
   assistive_tech_config: null
@@ -4287,7 +4287,7 @@
   comment: 機種名：FMVWC2U タッチ対応 スーパーファイン液晶
 - id: 231
   test: 0004-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4299,7 +4299,7 @@
   comment: null
 - id: 232
   test: 0004-02
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4312,7 +4312,7 @@
   comment: null
 - id: 233
   test: 0004-03
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4324,7 +4324,7 @@
   comment: null
 - id: 234
   test: 0004-05
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4336,7 +4336,7 @@
   comment: null
 - id: 235
   test: 0005-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4348,7 +4348,7 @@
   comment: null
 - id: 236
   test: 0006-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4362,7 +4362,7 @@
   comment: null
 - id: 237
   test: 0006-02
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4374,7 +4374,7 @@
   comment: null
 - id: 238
   test: 0006-03
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4386,7 +4386,7 @@
   comment: null
 - id: 239
   test: 0011-03
-  os: Windows10 pro 1803 17134.556
+  os: Windows10 pro 1803
   user_agent: Firefox 64.0.2
   assistive_tech: NVDA 2018.4.1jp
   assistive_tech_config: null
@@ -4398,7 +4398,7 @@
   comment: null
 - id: 240
   test: 0012-01
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: null
@@ -4421,7 +4421,7 @@
   comment: null
 - id: 241
   test: FIXME
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: null
@@ -4446,7 +4446,7 @@
   comment: null
 - id: 242
   test: 0012-03
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: null
@@ -4465,7 +4465,7 @@
   comment: null
 - id: 243
   test: 0012-04
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: ' NVDA ver2018.4.1jp'
   assistive_tech_config: null
@@ -4477,7 +4477,7 @@
   comment: null
 - id: 244
   test: 0012-05
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: null
@@ -4490,7 +4490,7 @@
   comment: null
 - id: 245
   test: 0013-01
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: null
@@ -4506,7 +4506,7 @@
   comment: null
 - id: 246
   test: 0011-01
-  os: Windows10 pro バージョン：1803 OSビルド：17134.556
+  os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
   assistive_tech_config: 
@@ -4707,7 +4707,7 @@
   comment: "実は、スクリーンリーダーモードでも試してみました。\n その結果、リンクのない画像だからなのか、「WAIC-CODE-0013-01」というページタイトルしか読みませんでした！"
 - id: 258
   test: 0007-02
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4723,7 +4723,7 @@
   comment: null
 - id: 259
   test: 0008-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4739,7 +4739,7 @@
   comment: null
 - id: 260
   test: 0003-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4751,7 +4751,7 @@
   comment: null
 - id: 261
   test: 0003-02
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4769,7 +4769,7 @@
   comment: null
 - id: 262
   test: 0003-03
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4781,7 +4781,7 @@
   comment: null
 - id: 263
   test: 0003-04
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4798,7 +4798,7 @@
   comment: null
 - id: 264
   test: 0009-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4811,7 +4811,7 @@
   comment: null
 - id: 265
   test: 0010-01
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4823,7 +4823,7 @@
   comment: null
 - id: 266
   test: 0010-02
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4835,7 +4835,7 @@
   comment: null
 - id: 267
   test: 0010-03
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4847,7 +4847,7 @@
   comment: null
 - id: 268
   test: 0010-04
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4859,7 +4859,7 @@
   comment: null
 - id: 269
   test: 0010-05
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4875,7 +4875,7 @@
   comment: null
 - id: 270
   test: 0010-06
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4891,7 +4891,7 @@
   comment: null
 - id: 271
   test: 0010-07
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4907,7 +4907,7 @@
   comment: null
 - id: 272
   test: 0010-08
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
@@ -4923,7 +4923,7 @@
   comment: null
 - id: 273
   test: 0010-08
-  os: Windows 10 Pro 1803 17134.472
+  os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
   assistive_tech_config: null
