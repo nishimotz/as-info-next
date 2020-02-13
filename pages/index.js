@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../components/Logo'
 import metadata from '../data/metadata.yaml'
+import tests from '../data/tests.yaml'
 import criteria from '../data/criteria.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../next-seo.config'
@@ -20,6 +21,14 @@ export default () =>
     {Object.keys(criteria).map(
       key => <li key={key}>
         <a href={'criteria/' + key + '.html'}>{key} {criteria[key].title}</a>
+      </li>
+    )}
+  </ul>
+  <h2>テストの一覧</h2>
+  <ul>
+    {Object.keys(tests).map(
+      key => <li key={key}>
+        <a href={'results/' + key + '.html'}>{key}: {tests[key].title}</a>
       </li>
     )}
   </ul>
