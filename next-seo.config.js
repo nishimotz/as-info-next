@@ -1,4 +1,4 @@
 export default {
-  titleTemplate: 'アクセシビリティ サポーテッド（AS）情報：%s',
+  titleTemplate: '%s：アクセシビリティ サポーテッド（AS）情報',
   title: 'ホーム'
 };
