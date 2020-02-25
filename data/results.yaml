@@ -4692,7 +4692,7 @@
     judgment: 満たしている
   comment: null
 - id: 257
-  test: 0007-01
+  test: 0013-01
   os: Windows 7 Professional Edition, 32bit
   user_agent: NetReader2 2.32
   assistive_tech: PC-Talker7 5.27
