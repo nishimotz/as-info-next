@@ -5011,7 +5011,7 @@
     judgment: 満たしている
   comment: null
 - id: 279
-  test: 0002-02
+  test: 0003-01
   os: Chrome OS 71
   user_agent: Chrome OS 71.0.3578.94(64bit)
   assistive_tech: 'ChromeVox Google TTS Setting : Chrome OS 日本語 インストール済み'
