@@ -4750,7 +4750,7 @@
     judgment: 満たしている
   comment: null
 - id: 261
-  test: 0003-02
+  test: 0003-01
   os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
