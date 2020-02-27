@@ -4064,7 +4064,7 @@
     judgment: 満たしていない
   comment: null
 - id: 220
-  test: FIXME
+  test: 0006-03
   os: macOS 10.14.2
   user_agent: Google Chrome 71.0.3578.98
   assistive_tech: VoiceOver
