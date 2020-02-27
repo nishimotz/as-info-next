@@ -4420,7 +4420,7 @@
     judgment: 満たしている
   comment: null
 - id: 241
-  test: FIXME
+  test: 0012-02
   os: Windows10 pro バージョン：1803
   user_agent: Fierfox ver64.0.2
   assistive_tech: NVDA ver2018.4.1jp
@@ -4568,7 +4568,7 @@
     judgment: 満たしていない
   comment: null
 - id: 249
-  test: 0012-01
+  test: 0011-03
   os: Android 8.0.0 ビルド番号：41.3.B.161
   user_agent: Google Chrome 71.0.3578.99
   assistive_tech: Android Accessibility Suite(TalkBack) 7.2.0.220693075
@@ -4679,7 +4679,7 @@
     judgment: 満たしていない
   comment: null
 - id: 256
-  test: 0013-01
+  test: 0007-01
   os: macOS 10.13.6
   user_agent: Firefox 64.0.2
   assistive_tech: null
@@ -4706,7 +4706,7 @@
     judgment: 満たしていない
   comment: "実は、スクリーンリーダーモードでも試してみました。\n その結果、リンクのない画像だからなのか、「WAIC-CODE-0013-01」というページタイトルしか読みませんでした！"
 - id: 258
-  test: 0007-02
+  test: 0007-01
   os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
