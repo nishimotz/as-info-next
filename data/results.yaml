@@ -4846,7 +4846,7 @@
     judgment: 満たしていない
   comment: null
 - id: 268
-  test: 0010-04
+  test: 0010-03
   os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
