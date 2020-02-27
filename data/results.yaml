@@ -2805,7 +2805,7 @@
     judgment: 満たしている
   comment: null
 - id: 161
-  test: 003-02
+  test: 0003-02
   os: macOS 10.14.2
   user_agent: Google Chrome 71.0.3578.98
   assistive_tech: VoiceOver
