@@ -3701,26 +3701,26 @@
     actual: (音声閲覧環境) 1. 2. とも満たしていました。
     judgment: 満たしている
   comment: null
-- id: 199
-  test: 0004-05
-  os: macOS 10.14.2
-  user_agent: Google Chrome 71.0.3578.98
-  assistive_tech: VoiceOver
-  assistive_tech_config: null
-  contents:
-  - expected: '(視覚閲覧環境) :
+# - id: 199
+#   test: 0004-05
+#   os: macOS 10.14.2
+#   user_agent: Google Chrome 71.0.3578.98
+#   assistive_tech: VoiceOver
+#   assistive_tech_config: null
+#   contents:
+#   - expected: '(視覚閲覧環境) :
 
-      マウス操作 : 各 area 要素にマウスポインタを重ね、挙動を確認
+#       マウス操作 : 各 area 要素にマウスポインタを重ね、挙動を確認
 
-      キーボード操作 : 各 area 要素にフォーカスを移動し、挙動を確認'
-    procedure: ' (視覚閲覧環境) :
+#       キーボード操作 : 各 area 要素にフォーカスを移動し、挙動を確認'
+#     procedure: ' (視覚閲覧環境) :
 
-      マウスポインタの形状変化や、フォーカスの枠線表示などの視覚効果が提供されている場合は OK と判断'
-    actual: ' (視覚閲覧環境) :
+#       マウスポインタの形状変化や、フォーカスの枠線表示などの視覚効果が提供されている場合は OK と判断'
+#     actual: ' (視覚閲覧環境) :
 
-      マウス操作もキーボード操作もブラウザの左下に遷移先のURLのみ表示された。'
-    judgment: 満たしている
-  comment: null
+#       マウス操作もキーボード操作もブラウザの左下に遷移先のURLのみ表示された。'
+#     judgment: 満たしている
+#   comment: null
 # - id: 200
 #   test: 0004-05
 #   os: macOS 10.14.2
