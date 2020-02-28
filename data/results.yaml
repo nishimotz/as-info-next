@@ -1730,10 +1730,6 @@
     procedure: Tabキーで「施設ご利用の手引き PDFファイル」に移動した
     actual: リンクテキストとアイコン画像の代替テキスト “施設ご利用の手引き PDFファイル” と読み上げられた。
     judgment: 満たしている
-  - expected: ''
-    procedure: ''
-    actual: ''
-    judgment: 満たしている
   comment: null
 - id: 104
   test: 0010-01
