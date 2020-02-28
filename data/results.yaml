@@ -4129,18 +4129,18 @@
     actual: ' (音声閲覧環境) iframe 要素の存在がまったくありませんでした'
     judgment: 満たしていない
   comment: null
-- id: 224
-  test: 0017-02
-  os: macOS 10.13.6
-  user_agent: Safari 12.0.2
-  assistive_tech: VoiceOver
-  assistive_tech_config: null
-  contents:
-  - expected: (音声閲覧環境) iframe 要素の末尾に直接移動するための何らかの手段が提供されている
-    procedure: (音声閲覧環境) テストファイルを操作し、結果を確認
-    actual: (音声閲覧環境) iframe 要素の存在がまったくわからないのでなにもできませんでした。
-    judgment: 満たしていない
-  comment: null
+# - id: 224
+#   test: 0017-02
+#   os: macOS 10.13.6
+#   user_agent: Safari 12.0.2
+#   assistive_tech: VoiceOver
+#   assistive_tech_config: null
+#   contents:
+#   - expected: (音声閲覧環境) iframe 要素の末尾に直接移動するための何らかの手段が提供されている
+#     procedure: (音声閲覧環境) テストファイルを操作し、結果を確認
+#     actual: (音声閲覧環境) iframe 要素の存在がまったくわからないのでなにもできませんでした。
+#     judgment: 満たしていない
+#   comment: null
 - id: 225
   test: 0008-01
   os: Windows 10 Home 64bit
