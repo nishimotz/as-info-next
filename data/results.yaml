@@ -4902,7 +4902,7 @@
     judgment: 満たしている
   comment: null
 - id: 272
-  test: 0010-08
+  test: 0010-07
   os: Windows 10 Pro 1803
   user_agent: Internet Explorer 11.0,101
   assistive_tech: PC-Talker 10 64bit Vesion.1.26
