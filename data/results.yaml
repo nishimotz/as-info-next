@@ -4595,7 +4595,7 @@
     judgment: 満たしている
   comment: null
 - id: 251
-  test: 0012-03
+  test: 0012-02
   os: Android 8.0.0 ビルド番号：41.3.B.161
   user_agent: Google Chrome 71.0.3578.99
   assistive_tech: Android Accessibility Suite(TalkBack) 7.2.0.220693075
