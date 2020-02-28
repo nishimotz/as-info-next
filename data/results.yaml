@@ -4468,7 +4468,7 @@
   contents:
   - expected: セレクトメニューにフォーカスを移動すると、title 属性値 “検索範囲を選択” が読み上げられる
     procedure: Tabキーで移動した。
-    actual: 「検索範囲」と読み上げた。
+    actual: 「検索範囲を選択」と読み上げた。
     judgment: 満たしている
   comment: null
 - id: 244
