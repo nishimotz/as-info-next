@@ -13,6 +13,15 @@ import SEO from '../../next-seo.config'
 const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'break-word' };
 const list_item_style = { overflowWrap: 'break-word' };
 
+const nl2br = (source) => {
+  if (source === null) {
+    return <></>;
+  }
+  return <div>{source.split('\n').map((line, index) => {
+    return <p key={index}>{line}</p>;
+  })}</div>;
+};
+
 const ResultTableRow = (props) => {
   const result = props.result;
   const contents = result.contents;
@@ -24,18 +33,18 @@ const ResultTableRow = (props) => {
         <li style={list_item_style}>{result.os}</li>
         <li style={list_item_style}>{result.user_agent}</li>
         {result.assistive_tech && (<li style={list_item_style}>{result.assistive_tech}</li>)}
-        {result.assistive_tech_config && (<li style={list_item_style}>{result.assistive_tech_config}</li>)}
+        {result.assistive_tech_config && (<li style={list_item_style}>{nl2br(result.assistive_tech_config)}</li>)}
       </ul></td>
       <td>
         {contents[0].judgment === '満たしている' ? '○' : '×'}
       </td>
       <td style={larger_th_style}>
-        {contents[0].procedure}
+        {nl2br(contents[0].procedure)}
       </td>
       <td style={larger_th_style}>
-        {contents[0].actual}
+        {nl2br(contents[0].actual)}
       </td>
-      <td style={larger_th_style}>{result.comment}</td>
+      <td style={larger_th_style}>{nl2br(result.comment)}</td>
       <td style={larger_th_style}></td>
     </tr>
     );
@@ -51,7 +60,7 @@ const ResultTableRow = (props) => {
               <li style={list_item_style}>{result.os}</li>
               <li style={list_item_style}>{result.user_agent}</li>
               {result.assistive_tech && (<li style={list_item_style}>{result.assistive_tech}</li>)}
-              {result.assistive_tech_config && (<li style={list_item_style}>{result.assistive_tech_config}</li>)}
+              {result.assistive_tech_config && (<li style={list_item_style}>{nl2br(result.assistive_tech_config)}</li>)}
             </ul></td>
           </>
         )}
@@ -59,14 +68,14 @@ const ResultTableRow = (props) => {
           {item.judgment === '満たしている' ? '○' : '×'}
         </td>
         <td style={larger_th_style}>
-          {item.procedure}
+          {nl2br(item.procedure)}
         </td>
         <td style={larger_th_style}>
-          {item.actual}
+          {nl2br(item.actual)}
         </td>
         {index === 0 && (
           <>
-          <td rowSpan={contents.length} style={larger_th_style}>{result.comment}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{nl2br(result.comment)}</td>
           <td rowSpan={contents.length} style={larger_th_style}></td>
           </>
         )}
