@@ -45,7 +45,7 @@ const ResultTableRow = (props) => {
         {nl2br(contents[0].actual)}
       </td>
       <td style={larger_th_style}>{nl2br(result.comment)}</td>
-      <td style={larger_th_style}></td>
+      <td style={larger_th_style}>{result.tester_name}</td>
     </tr>
     );
   }
@@ -76,7 +76,7 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
           <td rowSpan={contents.length} style={larger_th_style}>{nl2br(result.comment)}</td>
-          <td rowSpan={contents.length} style={larger_th_style}></td>
+          <td rowSpan={contents.length} style={larger_th_style}>{result.tester_name}</td>
           </>
         )}
       </tr>
