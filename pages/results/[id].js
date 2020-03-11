@@ -7,6 +7,7 @@ import tests from '../../data/tests.yaml'
 import criteria from '../../data/criteria.yaml'
 import techs from '../../data/techs.yaml'
 import results from '../../data/results.yaml'
+import testers from '../../data/testers.yaml'
 import NextSeo from 'next-seo'
 import SEO from '../../next-seo.config'
 
@@ -20,6 +21,22 @@ const nl2br = (source) => {
   return <div>{source.split('\n').map((line, index) => {
     return <p key={index}>{line}</p>;
   })}</div>;
+};
+
+const getTesterName = (result_id) => {
+  const tester_ids = Object.keys(testers).filter(
+    key => {
+      if (testers[key].results !== null) {
+        return testers[key].results.includes(result_id);
+      } else {
+        return false;
+      }
+    }
+  );
+  if (tester_ids.length >= 1) {
+    return testers[tester_ids[0]].name;
+  }
+  return undefined;
 };
 
 const ResultTableRow = (props) => {
@@ -45,7 +62,7 @@ const ResultTableRow = (props) => {
         {nl2br(contents[0].actual)}
       </td>
       <td style={larger_th_style}>{nl2br(result.comment)}</td>
-      <td style={larger_th_style}>{result.tester_name}</td>
+      <td style={larger_th_style}>{getTesterName(result.id)}</td>
     </tr>
     );
   }
@@ -76,7 +93,7 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
           <td rowSpan={contents.length} style={larger_th_style}>{nl2br(result.comment)}</td>
-          <td rowSpan={contents.length} style={larger_th_style}>{result.tester_name}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result.id)}</td>
           </>
         )}
       </tr>
