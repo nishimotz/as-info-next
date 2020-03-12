@@ -36,7 +36,7 @@ const getTesterName = (result_id) => {
   if (tester_ids.length >= 1) {
     return testers[tester_ids[0]].name;
   }
-  return undefined;
+  return '四方田正夫';
 };
 
 const ResultTableRow = (props) => {
@@ -61,8 +61,8 @@ const ResultTableRow = (props) => {
       <td style={larger_th_style}>
         {nl2br(contents[0].actual)}
       </td>
-      <td style={larger_th_style}>{nl2br(result.comment)}</td>
       <td style={larger_th_style}>{getTesterName(result.id)}</td>
+      <td style={larger_th_style}>{nl2br(result.comment)}</td>
     </tr>
     );
   }
@@ -92,8 +92,8 @@ const ResultTableRow = (props) => {
         </td>
         {index === 0 && (
           <>
-          <td rowSpan={contents.length} style={larger_th_style}>{nl2br(result.comment)}</td>
           <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result.id)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}>{nl2br(result.comment)}</td>
           </>
         )}
       </tr>
@@ -183,8 +183,8 @@ const Result = ({ query }) => {
             <th scope="col">判断</th>
             <th scope="col">操作内容</th>
             <th scope="col">得られた結果</th>
-            <th scope="col">備考</th>
             <th scope="col">テスト実施者</th>
+            <th scope="col">備考</th>
           </tr>
         </thead>
         <tbody>
