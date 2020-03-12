@@ -15,7 +15,7 @@ const larger_th_style = { minWidth: '6em', maxWidth: '10em', overflowWrap: 'brea
 const list_item_style = { overflowWrap: 'break-word' };
 
 const nl2br = (source) => {
-  if (source === null) {
+  if (source === null || typeof source === 'undefined') {
     return <></>;
   }
   return <div>{source.split('\n').map((line, index) => {
