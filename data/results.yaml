@@ -3870,6 +3870,7 @@
     actual: ソースを表示、開発者ツール共に<title>タグを確認できた
     judgment: 満たしている
   comment: null
+  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
 - id: 209
   test: 0022-01
   os: macOS 10.13.6
