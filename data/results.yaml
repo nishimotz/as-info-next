@@ -855,6 +855,7 @@
     actual: 日本語の音声合成エンジンで読み上げられた。
     judgment: 満たしていない
   comment: Safariでは英語の音声合成エンジンで読み上げられたので、Firefoxの問題と判断しました。
+  reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
 - id: 51
   test: 0017-01
   os: macOS 10.14.2
@@ -4098,6 +4099,7 @@
     actual: (音声閲覧環境)どのエンジンを使われているかわかりませんでしたが、英語で読まれました
     judgment: 満たしている
   comment: null
+  reviewer_comment: '[WAIC注] 再テストを行いましたが、本テスト結果と同じ結果は得られませんでした。'
 - id: 222
   test: 0006-03
   os: macOS 10.14.2
