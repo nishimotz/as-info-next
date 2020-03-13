@@ -39,6 +39,18 @@ const getTesterName = (result_id) => {
   return '四方田正夫';
 };
 
+function Comment(props) {
+  const result = props.result;
+  let comments = '';
+  if (typeof result.comment !== 'undefined' && result.comment != null) {
+    comments += result.comment;
+  }
+  if (typeof result.reviewer_comment !== 'undefined' && result.reviewer_comment != null) {
+    comments += '\n' + result.reviewer_comment;
+  }
+  return nl2br(comments);
+}
+
 const ResultTableRow = (props) => {
   const result = props.result;
   const contents = result.contents;
@@ -62,7 +74,7 @@ const ResultTableRow = (props) => {
         {nl2br(contents[0].actual)}
       </td>
       <td style={larger_th_style}>{getTesterName(result.id)}</td>
-      <td style={larger_th_style}>{nl2br(result.comment)}</td>
+      <td style={larger_th_style}><Comment result={result}/></td>
     </tr>
     );
   }
@@ -93,7 +105,7 @@ const ResultTableRow = (props) => {
         {index === 0 && (
           <>
           <td rowSpan={contents.length} style={larger_th_style}>{getTesterName(result.id)}</td>
-          <td rowSpan={contents.length} style={larger_th_style}>{nl2br(result.comment)}</td>
+          <td rowSpan={contents.length} style={larger_th_style}><Comment result={result}/></td>
           </>
         )}
       </tr>
