@@ -46,7 +46,10 @@ function Comment(props) {
     comments += result.comment;
   }
   if (typeof result.reviewer_comment !== 'undefined' && result.reviewer_comment != null) {
-    comments += '\n' + result.reviewer_comment;
+    if (comments.length > 0) {
+      comments += '\n';
+    }
+    comments += result.reviewer_comment;
   }
   return nl2br(comments);
 }
