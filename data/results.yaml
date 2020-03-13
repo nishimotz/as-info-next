@@ -873,7 +873,7 @@
     actual: iframeはスキップされ読み上げられない。
     judgment: 満たしていない
   comment: null
-  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+  reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
 - id: 52
   test: 0018-01
   os: macOS 10.14.2
@@ -4135,7 +4135,7 @@
     actual: ' (音声閲覧環境) iframe 要素の存在がまったくありませんでした'
     judgment: 満たしていない
   comment: null
-  reviewer_comment: '[WAIC注] テスト手順に問題があり、適切に判定できていません。'
+  reviewer_comment: '[WAIC注] サーバー環境に問題があり、テストが実施できていません。'
 - id: 224
   test: 0017-02
   os: macOS 10.13.6
