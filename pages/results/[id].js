@@ -168,7 +168,7 @@ const Result = ({ query }) => {
       <ul>
         {criterion_ids.map(criterion_id => (
         <li key={criterion_id}>
-          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level})</a>
+          <a href={'../criteria/' + criterion_id + '.html'}>{criterion_id} {criteria[criterion_id].title} (レベル{criteria[criterion_id].level}) に関連するAS情報</a>
         </li>
         ))}
       </ul>
@@ -176,7 +176,7 @@ const Result = ({ query }) => {
       <ul>
         {tech_ids.map(tech_id => (
         <li key={tech_id}>
-          <a href={'../techs/' + tech_id + '.html'}>{tech_id}: {techs[tech_id].title}</a>
+          <a href={'../techs/' + tech_id + '.html'}>{tech_id}:「{techs[tech_id].title}」に関連するAS情報</a>
         </li>
         ))}
       </ul>
