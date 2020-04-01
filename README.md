@@ -1,26 +1,36 @@
-# Generate the site of AS Info Next
+# アクセシビリティ サポーテッド情報の公開用データとその生成ツール
 
-Use [Next.js](https://nextjs.org/).
+このリポジトリは、[ウェブアクセシビリティ基盤委員会 実装作業部会 (WG2) ](https://waic.jp/committee/wg2/)が管理しています。
 
+JIS X 8341-3 や WCAG2.0 における「アクセシビリティ サポーテッド」に関する情報（AS情報）の公開用データとその生成ツールの作成／検討を行うリポジトリです。
 
-## Preparation
+## 主要なディレクトリー構成
 
-First, install node.js. And then, do
+GitHub 上でのディレクトリ構成は以下の通りです。
 
-    npm install
+ - as_info/
+ - as_info/app/ # AS テスト結果の Excel から HTML を生成するためのプログラム（現在使用していません）
+ - as_info/data/ # AS テスト結果の Excel／CSV ファイル（現在使用していません）、成型用の XSL ファイルなど
+ - as_info/result/ # プログラム実行の結果、生成された HTML／XML ファイル
+ - as_info/src/ # プログラムのソースファイル（現在使用していません）
 
-## Launch a local server
+## テストケース・テストコードに対するコメントや修正提案の送信方法
 
-Run `dev`.
+### issue へのコメント
 
-    npm run dev
+公開用データとその生成ツールに関するコメントは、GitHub の issue からお寄せください。該当する issue がない場合は新たに issue を立てていただいてもかまいません。
+なお、公開前レビューに[waic.jp](https://waic.jp/)の開発環境を利用しているため、issue の中には一部認証情報が必要なコンテンツについての議論が含まれることがあります。
 
-## Generate a static site
+### プルリクエスト
 
+公開用データとその生成ツールに対する修正提案は、GitHub のプルリクエストからお寄せください。 その際、プルリクエストは master ブランチにお願いします。
 
-Run `build` and `export` to generate a static site.
+## ブランチの運用（参考情報）
 
-    npm run build
-    npm run export
+GitHub での運用は以下のように進めることを考えています。
 
-
+ - master ブランチがリリース可能な最新の状態となるようにする （GitHub Pages でも master の内容が見えるようにする）
+ - 作業を開始する時には作業用ブランチを作成し、そのブランチで作業する。ブランチの名前は作業の内容に応じたものとする
+ - 作業中は適宜ブランチを push する
+ - 作業が終わったところでプルリクエストを出す。その際、作業者以外の人がレビューする。レビュアーを作業者が指名することもできる。
+ - 作業内容に問題ないことが確認出来たら master ブランチにマージする（ブランチは自動で削除されます）
